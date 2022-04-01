@@ -18,6 +18,7 @@ USE meli;
 CREATE TABLE `stats` (`chain` varchar(255) NOT NULL PRIMARY KEY, `mutant` BOOLEAN, `non_mutant` BOOLEAN);
 ```
 4. La base de datos se expone por defecto en el puerto 3306, asi que usamos el mismo para la conexion.
+5. Finalmente se creo una instancia RDS de AWS para la creacion de la base de datos mysql.
 
 ## App Go
 1. Descargar o clonar el repositorio a la maquina donde se desea correr
@@ -32,6 +33,7 @@ CREATE TABLE `stats` (`chain` varchar(255) NOT NULL PRIMARY KEY, `mutant` BOOLEA
 3. Se creo una instancia EC2 en AWS y se desplego la imagen de docker alli.
 4. Opcionalmente se puede descargar la imagen de docker para su uso local con el siguiente comando docker pull bfprietoc/meli
 5. Para correr la imagen: docker run -p 8080:1234 bfprietoc/meli:1.0
+
 
 
 ## Implementacion y tecnologias usadas
