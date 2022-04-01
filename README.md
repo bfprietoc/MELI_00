@@ -8,7 +8,7 @@ Me propuse realizar este reto en el lenguaje GOLANG, fue una decision que tome t
 
 ## Para ejecutar en una maquina local:
 
-##Base de datos (Mysql)
+## Base de datos (Mysql)
 1. Es necesario tener una base de datos Mysql
 2. Conectarse a la base de datos mysql
 3. Crear la base de datos y la tabla con los campos necesarios, para eso se ejecutan las siquientes querys
@@ -19,13 +19,19 @@ CREATE TABLE `stats` (`chain` varchar(255) NOT NULL PRIMARY KEY, `mutant` BOOLEA
 ```
 4. La base de datos se expone por defecto en el puerto 3306, asi que usamos el mismo para la conexion.
 
-##App Go
+## App Go
 1. Descargar o clonar el repositorio a la maquina donde se desea correr
 2. Ubicarse en el directorio MELI_00/
 3. Ejecutar el comando go build
 4. Luego se puede correr la app con el comando ./meli_00 o go run main.go
 5. La aplicacion se ejecutara en la ruta http://localhost:1234/
 
+
+## Docker 
+1. Se creo una imagen de docker de la aplicacion desarrollada en GO, se subio la imagen a dockerhub.
+3. Se creo una instancia EC2 en AWS y se desplego la imagen de docker alli.
+4. Opcionalmente se puede descargar la imagen de docker para su uso local con el siguiente comando docker pull bfprietoc/meli
+5. Para correr la imagen: docker run -p 8080:1234 bfprietoc/meli:1.0
 
 
 ## Implementacion y tecnologias usadas
