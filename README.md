@@ -99,11 +99,81 @@ Response: 200 (application/json)
 }
 ```
 
-### Test Unitarios
+### Test 
 
 Se realizaron test unitarios con la libreria "testing" de go, se creo una estructura con 12 diferentes entradas, todas pasaron exitosamente con un tiempo de respuesta de 0.100 ms aproximadamente.
 
 
+### Casos de prueba POSTMAN:
+```
+
+{
+    "dna":["ATGCGA", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"]
+}
+
+{
+    "dna":["ATGCGA", "CAGTGC", "TTATTT", "AGACGG", "GCGTCA", "TCACTG"]
+}
+
+{
+    "dna":["AATAGA", "GGGGCC", "TAGTGG", "AAAAGG", "CCGCTG", "GGGGTA"]
+}
+
+{
+    "dna":["AATAGA", "GAGGCC", "TAGTGG", "AAAAGG", "CCGCTG", "GGGGTA"]
+}
+
+
+{
+    "dna":["GGTAGA", "GGGTCC", "GGGTGG", "GGAAGG", "CCGCTG", "GGTGTT"]
+}
+
+
+{
+    "dna":["AATAGA", "GAGGCC", "TAGTGG", "AGAAGG", "CCGCTG", "GGTGTG"]
+}
+
+
+{
+    "dna":["AATAGA", "GAGGCC", "TAGTGG", "AGAAGG", "CCGCTG", "GGTGTA"]
+}
+
+
+{
+    "dna":["AATAGA", "GAGTCC", "TATTTG", "AGATGG", "CCGCTG", "GGTGTT"]
+}
+
+
+{
+    "dna":["AATAGA", "AATACC", "TTATGT", "ATAAGG", "CGCCTA", "GTGGTG"]
+}
+
+
+{
+    "dna":["AATAGA", "AAGGCC", "AAGTAG", "AGAAAG", "CCGCAG", "GGTGAG"]
+}
+
+
+{
+    "dna":["AATAGA", "GAGGCC", "TAGTGG", "AGAAGG", "CTGCTG", "GGTGTA"]
+}
+
+
+{
+    "dna":["TTGCGA", "CAGTGC", "TTATGT", "AGAACG", "CGCCTA", "TCACTC"]
+}
+
+
+```
+
+
+## Notas.
+
+El algoritmo que busca las coincidencias es simpre, pero en el caso de querer optimizarse y aprovechando la facilidad de crear threds (gorutines) con GOLANG, es posible mejorar los tiempos de ejecucion ya que se podria crear una gorutina para los analisis en cada una de las direcciones, pero tener en cuenta el consumo para la creacion de las gorutinas.
+
+Al momento de procesar y hacer la busqueda, el algoritmo implementado no realiza ninguna copia de la matriz entonces el almacenamiento en memoria es optimo.
+
+Analizando el peor de los casos ( Cuando no hay ninguna coincidencia) el algoritmo debe recorrer la matriz en las direcciones establecidad ( Horizontal, vertical y diagonal) por ello en terminos de tiempo de ejecucion tenemos que es lineal O(n) ya que a medida que vayamos aumentando la matriz, este tiempo aumentara tambien.
 
 
 
