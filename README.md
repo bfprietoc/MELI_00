@@ -4,7 +4,7 @@
 Prueba tecnica para para MercadoLibre (Backend). 
 
 ### Para tener en cuenta
-Me propuse realizar este reto en el lenguaje GOLANG, fue una decision que tome teniendo en cuenta que ya habia realizado este tipo de implementaciones en lenguajes como JAVA (Spring-boot), node.Js, Python o Rubi (On rails) y  me parecio una oportunidad genial para demostrar mis capacidades de aprendizaje y adaptacion a problemas rapidamente. Se uso una base de datos MySql para almacenar la informacion.
+Me propuse realizar este reto en el lenguaje GOLANG, fue una decision que tome teniendo en cuenta que ya habia realizado este tipo de implementaciones en lenguajes como JAVA (Spring-boot), node.Js, Python o Ruby (On rails) y  me parecio una oportunidad genial para demostrar mis capacidades de aprendizaje y adaptacion a problemas rapidamente. Se uso una base de datos MySql para almacenar la informacion.
 
 ## Para ejecutar en una maquina local:
 
