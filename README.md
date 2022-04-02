@@ -49,7 +49,7 @@ CREATE TABLE `stats` (`chain` varchar(255) NOT NULL PRIMARY KEY, `mutant` BOOLEA
 
 Enlaces de AWS donde se encuentran los dos servicios principales:
 
-- [IsMutant](http://ec2-34-224-56-190.compute-1.amazonaws.com:8080/mutant) http://ec2-34-224-56-190.compute-1.amazonaws.com:8080/mutant
+- [IsMutant](http://ec2-18-234-230-61.compute-1.amazonaws.com:8080/mutant) http://ec2-18-234-230-61.compute-1.amazonaws.com:8080/mutant
 * /mutant/
   * Tipo: POST
   * Respuesta para DNA **mutante: 200 (OK)**
@@ -82,7 +82,7 @@ Response:
   403 Forbidden
 ```
 
-- [stats](http://ec2-34-224-56-190.compute-1.amazonaws.com:8080/stats) : http://ec2-34-224-56-190.compute-1.amazonaws.com:8080/stats
+- [stats](http://ec2-18-234-230-61.compute-1.amazonaws.com:8080/stats) : http://ec2-18-234-230-61.compute-1.amazonaws.com:8080/stats
 
 * /stats/
   * Tipo: GET
